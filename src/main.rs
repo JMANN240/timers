@@ -66,9 +66,7 @@ impl Timers {
     }
 
     fn render_frame(&mut self, frame: &mut Frame) {
-        let state = &mut TimersState {
-            theme: self.theme
-        };
+        let state = &mut TimersState { theme: self.theme };
 
         frame.render_stateful_widget(self, frame.area(), state);
     }
