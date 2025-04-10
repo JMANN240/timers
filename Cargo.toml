@@ -1,0 +1,9 @@
+[package]
+name = "timers"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.28.1"
+ratatui = { version = "0.29.0", features = ["crossterm"] }
+tui-widgets = "0.4.1"
